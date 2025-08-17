@@ -7,7 +7,7 @@ class Fraccion(object):
         denominador = self.denominador
         return Fraccion(numerador,denominador)
     def __str__(self):
-        return f"{self.numerador}/{self.denominador}
+        return f"{self.numerador}/{self.denominador}"
 
 
 """
