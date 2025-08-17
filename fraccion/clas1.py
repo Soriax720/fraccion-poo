@@ -12,14 +12,14 @@ class Fraccion(object):
         numerador = self.numerador - other.numerador
         denominador = self.denominador
         return Fraccion(numerador,denominador)
+    def __mul__(self, other):
+        numerador = self.numerador * other.numerador
+        denominador = self.denominador
+        return Fraccion(numerador,denominador)
 
-f = Fraccion(5,3)
-e = Fraccion(2,3)
-print(f - e)
+"""
 
 """
 f = Fraccion(2,3)
 e = Fraccion(5,3)
-print(f + e)
-b = f + e
-print(b)"""
+print(f * e)
