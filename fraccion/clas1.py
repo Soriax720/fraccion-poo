@@ -8,7 +8,14 @@ class Fraccion(object):
         return Fraccion(numerador,denominador)
     def __str__(self):
         return f"{self.numerador}/{self.denominador}"
+    def __sub__(self, other):
+        numerador = self.numerador - other.numerador
+        denominador = self.denominador
+        return Fraccion(numerador,denominador)
 
+f = Fraccion(5,3)
+e = Fraccion(2,3)
+print(f - e)
 
 """
 f = Fraccion(2,3)
